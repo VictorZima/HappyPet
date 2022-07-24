@@ -13,6 +13,7 @@
 		284E2BE2288B969000C108D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284E2BE1288B969000C108D5 /* Preview Assets.xcassets */; };
 		284E2BE9288B96C000C108D5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E2BE8288B96C000C108D5 /* SplashScreen.swift */; };
 		2877866F288E06640089D12A /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877866E288E06640089D12A /* BlurView.swift */; };
+		28778671288E112D0089D12A /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28778670288E112D0089D12A /* ProductsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		284E2BE1288B969000C108D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		284E2BE8288B96C000C108D5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2877866E288E06640089D12A /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		28778670288E112D0089D12A /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				284E2BDA288B968E00C108D5 /* HappyPetApp.swift */,
 				284E2BDC288B968E00C108D5 /* ContentView.swift */,
 				284E2BE8288B96C000C108D5 /* SplashScreen.swift */,
+				28778670288E112D0089D12A /* ProductsList.swift */,
 				2877866E288E06640089D12A /* BlurView.swift */,
 				284E2BDE288B969000C108D5 /* Assets.xcassets */,
 				284E2BE0288B969000C108D5 /* Preview Content */,
@@ -145,6 +148,7 @@
 			files = (
 				284E2BDD288B968E00C108D5 /* ContentView.swift in Sources */,
 				2877866F288E06640089D12A /* BlurView.swift in Sources */,
+				28778671288E112D0089D12A /* ProductsList.swift in Sources */,
 				284E2BDB288B968E00C108D5 /* HappyPetApp.swift in Sources */,
 				284E2BE9288B96C000C108D5 /* SplashScreen.swift in Sources */,
 			);
