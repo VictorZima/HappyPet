@@ -9,27 +9,29 @@ import SwiftUI
 
 struct SplashView: View {
     @State private var showAnimation = false
-    let animals: [String] = ["hare", "tortoise", "ladybug", "leaf"]
+    let animals = ["hare", "tortoise", "ladybug", "leaf"]
+    let delay = [0.1, 0.4, 0.7, 1.0]
     
     var body: some View {
         VStack {
             Spacer()
             HStack(spacing: 10) {
-                ForEach(animals, id: \.self) { animal in
+                ForEach(0..<animals.count, id:\.self) { index in
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.green, style: StrokeStyle(lineWidth: 4, lineCap: CGLineCap.round))
                             .frame(width: 70, height: 70)
                         
-                        Image(systemName: animal)
+                        Image(systemName: animals[index])
                             .font(.system(size: 33))
                             .foregroundColor(.black)
+                            .foregroundColor(.red)
                     }
                     .opacity(showAnimation ? 1 : 0)
-                    .animation(.linear(duration: 1).delay(0.1), value: showAnimation)
+                    .animation(.linear(duration: 1).delay(delay[index]), value: showAnimation)
                 }
-            
             }
+            
             Text("HAPPY PET")
                 .font(.title)
                 .fontWeight(.bold)
