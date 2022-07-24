@@ -1,5 +1,5 @@
 //
-//  SplashView.swift
+//  SplashScreen.swift
 //  HappyPet
 //
 //  Created by VictorZima on 23/07/2022.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SplashView: View {
-    @State private var showAnimation = false
+struct SplashScreen: View {
     let animals = ["hare", "tortoise", "ladybug", "leaf"]
     let delay = [0.1, 0.4, 0.7, 1.0]
+    @State private var showAnimation = false
     
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct SplashView: View {
                         
                         Image(systemName: animals[index])
                             .font(.system(size: 33))
-                            .foregroundColor(.black)
+                            .foregroundColor(.green)
                             .foregroundColor(.red)
                     }
                     .opacity(showAnimation ? 1 : 0)
@@ -32,10 +32,8 @@ struct SplashView: View {
                 }
             }
             
-            Text("HAPPY PET")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.black)
+            BlurView(text: "HAPPY PET", textSize: 38, startTime: 0.41)
+                .padding(.top, 5)
             Spacer()
             
             Button("Tap") {
@@ -49,8 +47,8 @@ struct SplashView: View {
     }
 }
 
-struct SplashView_Previews: PreviewProvider {
+struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView()
+        SplashScreen()
     }
 }
