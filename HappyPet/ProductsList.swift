@@ -10,9 +10,8 @@ import SwiftUI
 struct ProductsList: View {
     var body: some View {
         VStack(spacing: 20) {
-            List {
-                Text("1")
-                Text("2")
+            NavigationView {
+                NavigationLink("go to second page", destination: Text("second view"))
             }
         }
     }
